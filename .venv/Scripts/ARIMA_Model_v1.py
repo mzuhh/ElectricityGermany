@@ -1,10 +1,19 @@
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
+
+
 # Importing the day ahead prices
-df = pd.read_csv('day_ahead_price_germany.csv')
+relative_path = 'data/day_ahead_price_germany.csv'
+cwd = os.getcwd()
+
+file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
+file_path = os.path.join(cwd, file_path)
+
+df = pd.read_csv(file_path)
 
 # Filterinng out prices that are negative or zero
 
@@ -119,13 +128,15 @@ forecast_values = forecast_values[:min_len]
 
 # Mean Absolute Error (MAE)
 mae = mean_absolute_error(true_values, forecast_values)
+print(f'Mean Absolute Error (MAE): {mae}')
 
 # Mean Absolute Percentage Error (MAPE)
 mape = np.mean(np.abs((true_values - forecast_values) / true_values)) * 100
+print(f'Mean Absolute Percentage Error (MAPE): {mape}')
 
 # Root Mean Squared Error (RMSE)
 rmse = np.sqrt(mean_squared_error(true_values, forecast_values))
-
-print(f'Mean Absolute Error (MAE): {mae}')
-print(f'Mean Absolute Percentage Error (MAPE): {mape}')
 print(f'Root Mean Squared Error (RMSE): {rmse}')
+
+
+
