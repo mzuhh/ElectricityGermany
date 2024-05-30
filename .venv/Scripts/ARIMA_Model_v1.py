@@ -16,14 +16,14 @@ if os.getenv('PYTHON_ENV') == 'pycharm':
 else:
     data_dir = 'content/ElectricityGermany/data'
 
-file_name = '/day_ahead_price_germany.csv'
+file_name = 'day_ahead_price_germany.csv'
 file_path = os.path.join(data_dir, file_name)
 
 # Importing the day ahead prices
-file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
-cwd = os.getcwd()
+# file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
+# cwd = os.getcwd()
 
-file_path = os.path.join(cwd, file_path)
+# file_path = os.path.join(cwd, file_path)
 
 df = pd.read_csv(file_path)
 
