@@ -2,15 +2,27 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+
 from sklearn.model_selection import train_test_split
+from statsmodels.tsa.stattools import adfuller
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+from statsmodels.tsa.arima.model import ARIMAResults
 
 
+
+#Directories
+if os.getenv('PYTHON_ENV') == 'pycharm':
+    data_dir = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data'
+else:
+    data_dir = 'content/ElectricityGermany/data'
+
+file_name = '/day_ahead_price_germany.csv'
+file_path = os.path.join(data_dir, file_name)
 
 # Importing the day ahead prices
-relative_path = 'data/day_ahead_price_germany.csv'
+file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
 cwd = os.getcwd()
 
-file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
 file_path = os.path.join(cwd, file_path)
 
 df = pd.read_csv(file_path)
@@ -57,7 +69,7 @@ print("Train set size: ", len(train_idx))
 print("Test set size", len(test_idx))
 
 # Check for stationarity of time series which is a requirement of ARIMA Models
-from statsmodels.tsa.stattools import adfuller
+
 
 data = df['Day Ahead Auction Price (EUR/MWh)']
 
@@ -89,8 +101,6 @@ model_fit = model.fit()
 print(model_fit.summary())
 
 #Forecasting Electricity Prices
-from statsmodels.tsa.arima.model import ARIMAResults
-
 n_periods = 10  # Number of future periods to forecast
 
 # Generate future timestamps for the forecasted periods
@@ -117,7 +127,7 @@ plt.legend()
 plt.show()
 
 #Evaluation
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+
 
 true_values = test_data
 
@@ -139,4 +149,4 @@ rmse = np.sqrt(mean_squared_error(true_values, forecast_values))
 print(f'Root Mean Squared Error (RMSE): {rmse}')
 
 
-
+print(f'\nEOT')
