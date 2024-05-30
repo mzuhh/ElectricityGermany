@@ -10,7 +10,7 @@ from statsmodels.tsa.arima.model import ARIMAResults
 
 
 
-#Directories
+#Dynamic Directories
 if os.getenv('PYTHON_ENV') == 'pycharm':
     data_dir = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data'
 else:
@@ -20,11 +20,6 @@ file_name = 'day_ahead_price_germany.csv'
 file_path = os.path.join(data_dir, file_name)
 print(f"Loading data from {file_path}")
 
-# Importing the day ahead prices
-# file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
-# cwd = os.getcwd()
-
-# file_path = os.path.join(cwd, file_path)
 
 df = pd.read_csv(file_path)
 
@@ -49,7 +44,7 @@ plt.grid(True)
 plt.show()
 
 # Converting the data into logarithmic output to stabilize the variance
-df['Day Ahead Auction Price (EUR/MWh)'] = np.log(df['Day Ahead Auction Price (EUR/MWh)']) # don't forget to transform the data back when making real predictions
+df['Day Ahead Auction Price (EUR/MWh)'] = np.log(df['Day Ahead Auction Price (EUR/MWh)']) # transform the data back when making real predictions
 
 
 #Plotting the data
@@ -95,17 +90,17 @@ from statsmodels.tsa.arima.model import ARIMA
 train_data.reset_index(drop=True, inplace=True)
 
  # Fit the ARIMA model using train_data directly as a Series
-model = ARIMA(train_data, order=(3, 0, 2))
+model = ARIMA(train_data, order=(100, 0, 10))
 model_fit = model.fit()
 
 # Print the summary of the ARIMA model
 print(model_fit.summary())
 
 #Forecasting Electricity Prices
-n_periods = 10  # Number of future periods to forecast
+n_periods = 3  # Number of future periods to forecast
 
 # Generate future timestamps for the forecasted periods
-future_dates = pd.date_range(start='2024-04-18', periods=n_periods, freq='h')
+future_dates = pd.date_range(start='2023-04-18', periods=n_periods, freq='h')
 
 # Make predictions for the future time periods
 forecast = model_fit.get_forecast(steps=n_periods)
