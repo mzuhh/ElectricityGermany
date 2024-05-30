@@ -18,6 +18,7 @@ else:
 
 file_name = 'day_ahead_price_germany.csv'
 file_path = os.path.join(data_dir, file_name)
+print(f"Loading data from {file_path}")
 
 # Importing the day ahead prices
 # file_path = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data/day_ahead_price_germany.csv'
