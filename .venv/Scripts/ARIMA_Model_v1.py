@@ -90,17 +90,17 @@ from statsmodels.tsa.arima.model import ARIMA
 train_data.reset_index(drop=True, inplace=True)
 
  # Fit the ARIMA model using train_data directly as a Series
-model = ARIMA(train_data, order=(25, 0, 2))
+model = ARIMA(train_data, order=(1, 1, 2))
 model_fit = model.fit()
 
 # Print the summary of the ARIMA model
 print(model_fit.summary())
 
 #Forecasting Electricity Prices
-n_periods = 3  # Number of future periods to forecast
+n_periods = 2  # Number of future periods to forecast
 
 # Generate future timestamps for the forecasted periods
-future_dates = pd.date_range(start='2024-04-18', periods=n_periods, freq='h')
+future_dates = pd.date_range(start='2023-04-18', periods=n_periods, freq='h')
 
 # Make predictions for the future time periods
 forecast = model_fit.get_forecast(steps=n_periods)
