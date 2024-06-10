@@ -8,8 +8,13 @@ from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.arima.model import ARIMA
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-# Importing the day ahead prices
-data_dir = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data'
+
+# Define directory and file path
+if os.getenv('PYTHON_ENV') == 'pycharm':
+    data_dir = 'C:/Users/MichalZlotnik/PycharmProjects/ElectricityGermany/data'
+else:
+    data_dir = '/content/ElectricityGermany/data'
+
 file_name = 'day_ahead_price_germany.csv'
 file_path = os.path.join(data_dir, file_name)
 df = pd.read_csv(file_path)
