@@ -22,9 +22,9 @@ df = pd.read_csv(file_path)
 
 date_column_name = 'date'
 value_column_name = 'value'
-start_date_training = "2006-01-01"
-end_date_training = "2018-12-31"
-start_date_testing = "2019-01-01"
+start_date_training = "2016-01-01"
+end_date_training = "2023-01-01"
+start_date_testing = "2023-01-01"
 plot_main_title = "Daily Price"
 nsteps = 40
 
@@ -198,5 +198,3 @@ print(f'Mean Absolute Percentage Error (MAPE): {mape}')
 # Root Mean Squared Error (RMSE)
 rmse = np.sqrt(mean_squared_error(true_values, forecast_values))
 print(f'Root Mean Squared Error (RMSE): {rmse}')
-
-
