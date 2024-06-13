@@ -1,0 +1,13 @@
+
+Session ID: b093b7aa-326a-48b6-85ff-45bdaac79281
+Start timestamp: 2024-06-13_14:12:21
+End timestamp: 2024-06-13_14:12:21
+
+nsteps: 1
+Start of Data Series: 2006-01-01 00:00:00
+Start Date of Training: 2014-01-01
+End Date of Training: 2023-12-31
+Start Date of Testing: 2024-01-01
+
+ARIMA Model Order: (1, 1, 1)
+
