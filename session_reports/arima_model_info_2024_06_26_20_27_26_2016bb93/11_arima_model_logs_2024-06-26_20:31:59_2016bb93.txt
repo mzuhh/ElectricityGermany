@@ -1,0 +1,52 @@
+
+Session ID: 2016bb93
+Start timestamp: 2024-06-26_20:30:08
+End timestamp: 2024-06-26_20:31:59
+
+nsteps: 1
+Start of Data Series: 2022-01-01 00:00:00
+Start Date of Training: 2022-01-01 00:00:00
+End Date of Training: 2022-03-31 23:00:00
+Start Date of Testing: 2022-03-31 23:00:00
+Edd Date of Testing: 2022-04-01 23:00:00
+
+ARIMA Model Order: (2, 1, 5)
+
+
+Mean Absolute Error (MAE): 7.922239611582462
+Mean Absolute Percentage Error (MAPE): 5.113392823496002
+Root Mean Squared Error (RMSE): 9.332963463132579
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.05104
+
+ARIMA Model Summary:
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                 2182
+Model:                 ARIMA(2, 1, 5)   Log Likelihood               -9715.423
+Date:                Wed, 26 Jun 2024   AIC                          19446.846
+Time:                        20:32:01   BIC                          19492.346
+Sample:                             0   HQIC                         19463.480
+                               - 2182                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          1.7242      0.002    721.153      0.000       1.720       1.729
+ar.L2         -0.9905      0.002   -420.856      0.000      -0.995      -0.986
+ma.L1         -1.4520      0.016    -91.922      0.000      -1.483      -1.421
+ma.L2          0.4675      0.031     15.244      0.000       0.407       0.528
+ma.L3          0.1929      0.036      5.426      0.000       0.123       0.263
+ma.L4          0.1809      0.035      5.176      0.000       0.112       0.249
+ma.L5         -0.1279      0.018     -6.929      0.000      -0.164      -0.092
+sigma2       419.6170      7.236     57.990      0.000     405.435     433.799
+===================================================================================
+Ljung-Box (L1) (Q):                   2.99   Jarque-Bera (JB):              2070.14
+Prob(Q):                              0.08   Prob(JB):                         0.00
+Heteroskedasticity (H):               2.33   Skew:                             0.21
+Prob(H) (two-sided):                  0.00   Kurtosis:                         7.75
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
+Number saved files in directory: 11
