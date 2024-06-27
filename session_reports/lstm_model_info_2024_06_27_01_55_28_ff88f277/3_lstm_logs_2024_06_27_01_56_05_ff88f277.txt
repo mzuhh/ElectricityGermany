@@ -1,0 +1,17 @@
+
+Session ID: ff88f277
+Start timestamp: 2024_06_27_01_55_28
+End timestamp: 2024_06_27_01_56_05
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+Edd Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 13.422435498442315
+Mean Absolute Percentage Error (MAPE): 760.7253251493016
+Root Mean Squared Error (RMSE): 18.501780093561308
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.2327670366520275
+R-squared (R²) value: 0.8486873382216453
+
+Number saved files in directory: 3
