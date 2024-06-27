@@ -1,0 +1,17 @@
+
+Session ID: 6c73d406
+Start timestamp: 2024_06_27_01_45_31
+End timestamp: 2024_06_27_01_46_05
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+Edd Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 13.579297596425334
+Mean Absolute Percentage Error (MAPE): 777.4916864824122
+Root Mean Squared Error (RMSE): 18.643750025828943
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.23480397668221586
+R-squared (R²) value: 0.8463562904308044
+
+Number saved files in directory: 3
