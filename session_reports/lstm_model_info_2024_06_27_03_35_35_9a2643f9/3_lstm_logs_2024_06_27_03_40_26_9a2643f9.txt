@@ -1,0 +1,17 @@
+
+Session ID: 9a2643f9
+Start timestamp: 2024_06_27_03_35_35
+End timestamp: 2024_06_27_03_40_26
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+End Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 5.7959143884933875
+Mean Absolute Percentage Error (MAPE): 1.850958024194769
+Root Mean Squared Error (RMSE): 7.522867126101255
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.018489658797121052
+R-squared (R²) value: 0.997742787302043
+
+Number of files saved in directory: 3
