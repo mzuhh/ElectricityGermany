@@ -1,0 +1,17 @@
+
+Session ID: c49538c8
+Start timestamp: 2024_06_27_02_14_44
+End timestamp: 2024_06_27_02_15_32
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+Edd Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 13.243702489569333
+Mean Absolute Percentage Error (MAPE): 738.0135401372148
+Root Mean Squared Error (RMSE): 18.353102688696936
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.2304440211386539
+R-squared (R²) value: 0.8511094169069022
+
+Number saved files in directory: 3
