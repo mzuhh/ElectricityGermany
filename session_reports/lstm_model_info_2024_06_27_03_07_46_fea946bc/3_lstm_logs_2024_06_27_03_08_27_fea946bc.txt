@@ -1,0 +1,17 @@
+
+Session ID: fea946bc
+Start timestamp: 2024_06_27_03_07_46
+End timestamp: 2024_06_27_03_08_27
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+End Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 12.766644601050277
+Mean Absolute Percentage Error (MAPE): 687.4192203584099
+Root Mean Squared Error (RMSE): 17.989418740274054
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.22375542103170215
+R-squared (R²) value: 0.8569517650147266
+
+Number of files saved in directory: 3
