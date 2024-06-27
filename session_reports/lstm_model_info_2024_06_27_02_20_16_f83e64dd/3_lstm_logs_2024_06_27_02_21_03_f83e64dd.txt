@@ -1,0 +1,17 @@
+
+Session ID: f83e64dd
+Start timestamp: 2024_06_27_02_20_16
+End timestamp: 2024_06_27_02_21_03
+
+Start Date of Training: 2022-01-01 00:00:00+01:00
+End Date of Training: 2023-01-01 00:00:00+01:00
+Start Date of Testing: 2023-01-01 01:00:00+01:00
+Edd Date of Testing: 2023-12-31T23:00+01:00
+
+Mean Absolute Error (MAE): 13.502661970074044
+Mean Absolute Percentage Error (MAPE): 766.7866244142659
+Root Mean Squared Error (RMSE): 18.574289872137278
+Mean Arctangent Absolute Percentage Error (MAAPE): 0.2337809805657137
+R-squared (R²) value: 0.847499004247797
+
+Number saved files in directory: 3
